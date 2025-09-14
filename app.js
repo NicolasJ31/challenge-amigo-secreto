@@ -1,6 +1,5 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades 
-// en lógica de programación. Aquí deberás desarrollar la lógica para resolver 
-// el problema.
+/* El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. 
+Aquí deberás desarrollar la lógica para resolver el problema.*/
 
 // Array para almacenar los nombres de los amigos
 let listaAmigos = [];
@@ -19,9 +18,23 @@ function agregarAmigo() {
     // Actualizar el array de amigos
     listaAmigos.push(nombre);
 
+    // Actualizar lista en pantalla
+    actualizarListaAmigos();
+
     // Limpiar el campo de entrada
     input.value = '';
 
-    // (Opcional) Mostrar la lista actualizada en consola para verificar
-    console.log(listaAmigos);
+}
+
+// Función para actualizar la lista en el HTML
+function actualizarListaAmigos() {
+    let lista = document.getElementById('listaAmigos');
+
+    // Limpiar la lista antes de volver a llenarla
+    lista.innerHTML = '';
+
+    // Recorrer el array y generar elementos <li>
+    for (let i = 0; i < listaAmigos.length; i++) {
+        lista.innerHTML += `<li>${listaAmigos[i]}</li>`;
+    }
 }
