@@ -27,4 +27,4 @@ Fue desarrollado con el objetivo de practicar lógica de programación en JavaSc
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/amigo-secreto.git
+   git clone https://github.com/tu-usuario/challenge-amigo-secreto.git
